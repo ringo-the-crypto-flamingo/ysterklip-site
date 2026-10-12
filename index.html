@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ysterklip</title>
+<meta name="description" content="Ysterklip builds market-positioning data and volatility models for traders who run their own systems. Gold, US indices, crude, FX and major crypto.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EC; --ink:#182027; --steel:#4A5A6A; --gold:#B8902E; --rule:#C9CFC9; --soft:#DFE3DD;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --paper:#161B20; --ink:#E6E9E4; --steel:#A3B0BC; --gold:#D1A84A; --rule:#2E363E; --soft:#1F262D; }
+}
+:root[data-theme="dark"]{ --paper:#161B20; --ink:#E6E9E4; --steel:#A3B0BC; --gold:#D1A84A; --rule:#2E363E; --soft:#1F262D; }
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:var(--gold);text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:flex-end;gap:16px;padding:40px 0 0}
+header img{width:44px;height:auto;display:block}
+header .name{font-family:"Source Serif 4",Georgia,serif;font-size:22px;letter-spacing:.08em;line-height:1}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(38px,7vw,58px);line-height:1.04;letter-spacing:-.01em;margin:72px 0 24px;max-width:14ch}
+.lede{font-size:21px;line-height:1.5;color:var(--steel);max-width:58ch;margin:0 0 72px}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:26px;margin:0 0 6px;line-height:1.2}
+section{border-top:1px solid var(--rule);padding:36px 0 40px}
+.status{display:flex;align-items:baseline;gap:12px;color:var(--steel);font-size:16px;margin:0 0 18px}
+.mark{width:12px;height:12px;border:1.5px solid var(--gold);border-radius:50%;display:inline-block;position:relative;top:0;flex:none}
+.mark.full{background:var(--gold)}
+.mark.half{background:linear-gradient(90deg,var(--gold) 50%,transparent 50%)}
+p{margin:0 0 16px;max-width:62ch}
+ul{margin:0 0 16px;padding-left:20px;max-width:62ch}
+li{margin:0 0 8px}
+.note{color:var(--steel);font-size:16px;max-width:62ch}
+.cta{margin-top:8px}
+.cta a{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:12px 20px;font-weight:600;border-radius:3px}
+.cta a:hover{background:var(--gold);color:#121212}
+footer{border-top:1px solid var(--rule);padding:28px 0 56px;color:var(--steel);font-size:15px;line-height:1.6}
+footer span{display:block}
+@media (max-width:480px){ body{font-size:17px} .lede{font-size:19px} h1{margin-top:48px} }
+@media (prefers-reduced-motion:no-preference){ .cta a{transition:background .15s ease} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="logo.png" alt="" width="44">
+  <div class="name">YSTERKLIP</div>
+</header>
+
+<h1>One model for the whole market.</h1>
+<p class="lede">Ysterklip builds market-positioning data and volatility models for traders who run their own systems. We watch gold, US indices, crude, FX and the major crypto pairs together, because none of them moves alone.</p>
+
+<section>
+  <div class="status"><span class="mark full" aria-hidden="true"></span><span>In private use</span></div>
+  <h2>Positioning dashboard and API</h2>
+  <p>Live order-book depth, open interest, long/short ratios, funding, volume by side, liquidations and large trades, from multiple venues, with a world economic calendar on the chart. Positioning data the way crypto traders have had it for years, for gold, US indices, crude and FX as well as the crypto majors.</p>
+  <p class="note">Runs our own desk today. A customer edition is planned.</p>
+</section>
+
+<section>
+  <div class="status"><span class="mark half" aria-hidden="true"></span><span>In training</span></div>
+  <h2>Volatility and range predictor</h2>
+  <p>Forecasts next-session volatility and expected range per instrument, trained on tick-level history. First outputs will be published with a live track record: every forecast logged against what actually happened, so you can judge it yourself.</p>
+</section>
+
+<section>
+  <div class="status"><span class="mark" aria-hidden="true"></span><span>Where it's going</span></div>
+  <h2>A single model that reads markets as one system</h2>
+  <p>How oil, the dollar, rates and carry flows move together; how those regimes feed through to equities and commodities; which instruments are compressed or over-extended relative to the rest. We'll publish each piece as it earns a track record, not before.</p>
+</section>
+
+<section>
+  <h2>How you'll get it</h2>
+  <ul>
+    <li>REST API with JSON output</li>
+    <li>Daily CSV feed at session open</li>
+    <li>Public track record for every published forecast</li>
+  </ul>
+  <p class="note">Ysterklip provides data and model outputs. It does not give financial advice, manage money or recommend trades.</p>
+</section>
+
+<section>
+  <h2>Request early access</h2>
+  <p>We're taking a small first group for the volatility feed. Tell us what you trade and how you'd use it.</p>
+  <p class="cta"><a href="mailto:philip@ysterklip.co.za?subject=Early%20access">Email philip@ysterklip.co.za</a></p>
+</section>
+
+<footer>
+  <span>Ysterklip (Pty) Ltd, Reg. 2025/825636/07</span>
+  <span>Bloemfontein, South Africa</span>
+</footer>
+
+</div>
+</body>
+</html>
